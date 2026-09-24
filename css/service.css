@@ -1,0 +1,182 @@
+/* ============================================================
+   SERVICE DETAIL PAGE — Clean & Minimalis (May May Style)
+   ============================================================ */
+
+/* ---------- 1. SERVICE HEADER MINIMAL ---------- */
+.service-header-minimal {
+  padding: 60px 0 0;
+  background: var(--white);
+  text-align: center;
+}
+
+.service-title-minimal {
+  font-family: var(--f-body);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+/* ---------- 2. TOGGLE MINIMAL ---------- */
+.service-toggle-minimal {
+  padding: 12px 0 48px;
+  background: var(--white);
+  text-align: center;
+}
+
+.toggle-tabs-minimal {
+  display: inline-flex;
+  gap: 32px;
+  margin-bottom: 12px;
+}
+
+.toggle-tab-minimal {
+  padding: 8px 4px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text-soft);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: var(--f-body);
+}
+
+.toggle-tab-minimal:hover {
+  color: var(--text);
+}
+
+.toggle-tab-minimal.is-active {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+/* ---------- 3. HAIRDRESSER GRID (NO CARD BORDER) ---------- */
+.hairdresser-section-minimal {
+  padding: 0 0 80px;
+  background: var(--white);
+}
+
+.hairdresser-grid-minimal {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.hairdresser-item {
+  text-align: left;
+}
+
+/* Foto Hairdresser */
+.hairdresser-photo-minimal {
+  position: relative;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  background: var(--bg-alt);
+  margin-bottom: 16px;
+}
+
+.hairdresser-photo-minimal img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.hairdresser-item:hover .hairdresser-photo-minimal img {
+  transform: scale(1.03);
+}
+
+/* Placeholder Box */
+.hairdresser-placeholder-minimal {
+  aspect-ratio: 1/1;
+  background: var(--bg-alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.hairdresser-placeholder-minimal-text {
+  font-family: var(--f-body);
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--text-soft);
+  text-align: center;
+  padding: 16px;
+  letter-spacing: 0.02em;
+}
+
+/* Info */
+.hairdresser-name-minimal {
+  font-family: var(--f-body);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.hairdresser-role-minimal {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  margin-bottom: 2px;
+}
+
+.hairdresser-price-minimal {
+  font-family: var(--f-body);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--text);
+  transition: all 0.4s ease;
+}
+
+.hairdresser-price-minimal.changing {
+  opacity: 0;
+  transform: translateY(-8px);
+}
+
+/* ---------- 4. RESPONSIVE ---------- */
+@media (max-width: 1024px) {
+  .hairdresser-grid-minimal {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-header-minimal {
+    padding: 70px 0 20px;
+  }
+
+  .hairdresser-grid-minimal {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .toggle-tabs-minimal {
+    gap: 24px;
+  }
+
+  .toggle-tab-minimal {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hairdresser-grid-minimal {
+    gap: 16px;
+  }
+
+  .hairdresser-name-minimal {
+    font-size: 0.9rem;
+  }
+
+  .hairdresser-price-minimal {
+    font-size: 0.9rem;
+  }
+
+  .toggle-tabs-minimal {
+    gap: 20px;
+  }
+}

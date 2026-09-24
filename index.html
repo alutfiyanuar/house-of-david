@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House Of David Salon — Official Kérastase Partner</title>
+    <meta
+      name="description"
+      content="Authorized Kérastase Salon di Surabaya. Layanan salon premium & produk original."
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%23faf7f2' width='100' height='100'/%3E%3Ctext x='50%25' y='55%25' font-family='serif' font-size='40' font-weight='bold' text-anchor='middle' fill='%231a1a1a'%3EHD%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ========== ANNOUNCEMENT BAR ========== -->
+    <div class="announcement">
+      <div class="wrap">
+        <p>
+          ✨ <strong>DISKON 15%</strong> pembelian pertama — Kode:
+          <code>DAVID15</code>
+        </p>
+      </div>
+    </div>
+
+    <!-- ========== HEADER ========== -->
+    <header class="header" id="header">
+      <div class="wrap">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <img
+            src="img/logo.png"
+            alt="House Of David Salon"
+            class="logo-image"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <div class="logo-fallback" style="display: none">
+            <span class="logo-main">House Of David</span>
+            <span class="logo-sub">Salon · Est. 1980</span>
+          </div>
+        </a>
+
+        <!-- Navigation dengan Dropdown -->
+        <nav class="nav">
+          <!-- Services Dropdown -->
+          <div class="nav-dropdown">
+            <a href="#services" class="nav-link">Services</a>
+            <div class="dropdown-menu">
+              <a href="pages/haircut.html">Haircut</a>
+              <a href="#services">Hair Styling</a>
+              <a href="#services">Hair Color</a>
+              <a href="#services">Hair Straightening</a>
+              <a href="#services">Hair Repair</a>
+              <a href="#services">Hair Perming</a>
+              <a href="#services">Hair & Scalp Treatment</a>
+            </div>
+          </div>
+
+          <!-- Concern Dropdown -->
+          <div class="nav-dropdown">
+            <a href="#concern" class="nav-link">Concern</a>
+            <div class="dropdown-menu">
+              <a href="?concern=sensitive#shop">Sensitive</a>
+              <a href="?concern=dandruff#shop">Dandruff</a>
+              <a href="?concern=oily#shop">Oily</a>
+              <a href="?concern=hairloss#shop">Hairloss</a>
+              <a href="?concern=hairfall#shop">Hairfall</a>
+              <a href="?concern=colored#shop">Colored</a>
+              <a href="?concern=thinner#shop">Thinner Hair</a>
+              <a href="?concern=dry#shop">Dry</a>
+              <a href="?concern=damaged#shop">Damaged</a>
+              <a href="?concern=anti-aging#shop">Anti Aging</a>
+              <a href="?concern=frizzy#shop">Frizzy</a>
+              <a href="?concern=curly#shop">Curly</a>
+            </div>
+          </div>
+
+          <!-- Product Dropdown -->
+          <div class="nav-dropdown">
+            <a href="#shop" class="nav-link">Product</a>
+            <div class="dropdown-menu">
+              <a href="?category=shampoo#shop">Shampoo</a>
+              <a href="?category=fondant#shop">Fondant / Conditioner</a>
+              <a href="?category=serum#shop">Serum</a>
+              <a href="?category=masque#shop">Masque</a>
+            </div>
+          </div>
+
+          <!-- Locations (tanpa dropdown) -->
+          <a href="#locations" class="nav-link">Locations</a>
+
+          <!-- Booking (tanpa dropdown) -->
+          <a href="#booking" class="nav-link">Booking</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="cart-btn" id="cartBtn" aria-label="Cart">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+            >
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+              <line x1="3" y1="6" x2="21" y2="6" />
+              <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+
+          <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== MOBILE MENU ========== -->
+    <div class="mobile-menu" id="mobileMenu">
+      <nav>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#concern">Concern</a>
+        <a href="index.html#shop">Product</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="index.html#booking">Booking</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- ========== 1. HERO SLIDESHOW ========== -->
+      <section class="hero">
+        <div class="hero-slider">
+          <div class="hero-track" id="heroTrack">
+            <div class="hero-slide">
+              <img
+                src="img/hero/hero1.jpg"
+                alt="House Of David Salon Interior"
+              />
+            </div>
+            <div class="hero-slide">
+              <img
+                src="img/hero/hero2.jpg"
+                alt="House Of David Hair Treatment"
+              />
+            </div>
+          </div>
+
+          <div class="hero-dots" id="heroDots"></div>
+
+          <button
+            class="hero-arrow hero-prev"
+            id="heroPrev"
+            aria-label="Previous slide"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+
+          <button
+            class="hero-arrow hero-next"
+            id="heroNext"
+            aria-label="Next slide"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <!-- ========== 2. SERVICES ========== -->
+      <section class="services" id="services">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Our Services</p>
+            <h2>Professional Salon Services</h2>
+            <p>
+              Layanan lengkap dari tim stylist bersertifikat Kérastase untuk
+              hasil salon premium di setiap kunjungan.
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <a href="pages/haircut.html" class="service-card">
+              <img src="img/service/hair-cut.jpeg" alt="Hair Cut" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair Cut</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+
+            <a href="#" class="service-card">
+              <img src="img/service/hair-styling.jpeg" alt="Hair Styling" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair Styling</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+
+            <a href="#" class="service-card">
+              <img src="img/service/hair-color.jpeg" alt="Hair Color" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair Color</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+
+            <a href="#" class="service-card">
+              <img src="img/service/hair-smoothing.jpeg" alt="Hair Smoothing" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair Straightening</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+
+            <a href="#" class="service-card">
+              <img src="img/service/hair-repair.jpeg" alt="Hair Repair" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair Repair</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+
+            <a href="#" class="service-card">
+              <img src="img/service/hair-perming.jpeg" alt="Hair Perming" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair Perming</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+
+            <a href="#" class="service-card">
+              <img src="img/service/hair-treatment.jpeg" alt="Hair Treatment" />
+              <div class="service-overlay"></div>
+              <div class="service-content">
+                <h3>Hair & Scalp Treatment</h3>
+                <span class="service-view">View</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 3. SHOP BY CONCERN ========== -->
+      <section class="concern" id="concern">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Shop Kérastase</p>
+            <h2>Shop by Hair Concern</h2>
+            <p>
+              Pilih berdasarkan masalah rambut Anda untuk menemukan produk yang
+              tepat.
+            </p>
+          </div>
+
+          <!-- Navigation Buttons -->
+          <button
+            class="concern-nav concern-prev"
+            id="concernPrev"
+            aria-label="Previous"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="15 18 9 12 15 6" />
+            </svg>
+          </button>
+
+          <button
+            class="concern-nav concern-next"
+            id="concernNext"
+            aria-label="Next"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </button>
+
+          <!-- Scroll Container -->
+          <div class="concern-grid" id="concernGrid">
+            <a href="?concern=sensitive#shop" class="concern-card">
+              <img
+                src="img/concern/sensitive.jpg"
+                alt="Sensitive Scalp"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Sensitive</h3>
+                <p>Kulit kepala sensitif</p>
+              </div>
+            </a>
+
+            <a href="?concern=dandruff#shop" class="concern-card">
+              <img
+                src="img/concern/dandruff.jpg"
+                alt="Dandruff"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Dandruff</h3>
+                <p>Ketombe</p>
+              </div>
+            </a>
+
+            <a href="?concern=oily#shop" class="concern-card">
+              <img src="img/concern/oily.jpg" alt="Oily Hair" loading="lazy" />
+              <div class="concern-overlay">
+                <h3>Oily</h3>
+                <p>Rambut berminyak</p>
+              </div>
+            </a>
+
+            <a href="?concern=hairloss#shop" class="concern-card">
+              <img
+                src="img/concern/hairloss.jpg"
+                alt="Hair Loss"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Hairloss</h3>
+                <p>Kerontokan parah</p>
+              </div>
+            </a>
+
+            <a href="?concern=hairfall#shop" class="concern-card">
+              <img
+                src="img/concern/hairfall.jpg"
+                alt="Hair Fall"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Hairfall</h3>
+                <p>Rambut rontok</p>
+              </div>
+            </a>
+
+            <a href="?concern=colored#shop" class="concern-card">
+              <img
+                src="img/concern/colored.jpg"
+                alt="Colored Hair"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Colored</h3>
+                <p>Rambut diwarnai</p>
+              </div>
+            </a>
+
+            <a href="?concern=thinner#shop" class="concern-card">
+              <img
+                src="img/concern/thinner-hair.jpg"
+                alt="Thinner Hair"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Thinner Hair</h3>
+                <p>Rambut tipis</p>
+              </div>
+            </a>
+
+            <a href="?concern=dry#shop" class="concern-card">
+              <img src="img/concern/dry.jpg" alt="Dry Hair" loading="lazy" />
+              <div class="concern-overlay">
+                <h3>Dry</h3>
+                <p>Rambut kering</p>
+              </div>
+            </a>
+
+            <a href="?concern=damaged#shop" class="concern-card">
+              <img
+                src="img/concern/damaged.jpg"
+                alt="Damaged Hair"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Damaged</h3>
+                <p>Rambut rusak</p>
+              </div>
+            </a>
+
+            <a href="?concern=anti-aging#shop" class="concern-card">
+              <img
+                src="img/concern/anti-aging.jpg"
+                alt="Anti Aging"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Anti Aging</h3>
+                <p>Penuaan rambut</p>
+              </div>
+            </a>
+
+            <a href="?concern=frizzy#shop" class="concern-card">
+              <img
+                src="img/concern/frizzy.jpg"
+                alt="Frizzy Hair"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Frizzy</h3>
+                <p>Rambut kusut</p>
+              </div>
+            </a>
+
+            <a href="?concern=curly#shop" class="concern-card">
+              <img
+                src="img/concern/curly.jpg"
+                alt="Curly Hair"
+                loading="lazy"
+              />
+              <div class="concern-overlay">
+                <h3>Curly</h3>
+                <p>Rambut keriting</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Progress Bar -->
+          <div class="concern-progress">
+            <div class="concern-progress-bar" id="concernProgressBar"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 4. PRODUCTS ========== -->
+      <section class="products" id="shop">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Our Collection</p>
+            <h2>Kérastase Products</h2>
+            <p>
+              Pilih produk Kérastase sesuai kebutuhan rambut Anda. Semua produk
+              100% original.
+            </p>
+
+            <div class="filter-tabs" id="filterTabs">
+              <button class="tab is-active" data-cat="all">All Product</button>
+              <button class="tab" data-cat="shampoo">Shampoo</button>
+              <button class="tab" data-cat="fondant">
+                Fondant / Conditioner
+              </button>
+              <button class="tab" data-cat="serum">Serum</button>
+              <button class="tab" data-cat="masque">Masque</button>
+            </div>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+          <div class="pagination" id="pagination"></div>
+        </div>
+      </section>
+
+      <!-- ========== 5. LOCATIONS ========== -->
+      <section class="locations" id="locations">
+        <div class="wrap">
+          <div class="section-head">
+            <p class="eyebrow">Visit Us</p>
+            <h2>Our Locations in Surabaya</h2>
+            <p>Kunjungi salon House Of David di 3 lokasi strategis Surabaya.</p>
+          </div>
+
+          <div class="locations-grid">
+            <a
+              href="https://maps.app.goo.gl/hiibMr3FyTqbLD1w5"
+              target="_blank"
+              class="location-card"
+            >
+              <div class="location-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3>Hod Waterplace</h3>
+              <p class="location-address">D1/D2</p>
+              <p class="location-city">Surabaya</p>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/nUqaPTCUNYge1kqb9"
+              target="_blank"
+              class="location-card"
+            >
+              <div class="location-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3>Hod Galaxy Mall</h3>
+              <p class="location-address">3rd Floor</p>
+              <p class="location-city">Surabaya</p>
+            </a>
+
+            <a
+              href="https://maps.app.goo.gl/41VmMM4hCvgnpdoj9"
+              target="_blank"
+              class="location-card"
+            >
+              <div class="location-icon">
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </div>
+              <h3>Hod Pakuwon City Mall</h3>
+              <p class="location-address">3rd Floor, Unit 2</p>
+              <p class="location-city">Surabaya</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 6. BOOKING ========== -->
+      <section class="newsletter" id="booking">
+        <div class="wrap">
+          <div class="newsletter-content">
+            <h2>Book Your Appointment</h2>
+            <p>
+              Reservasi layanan salon atau konsultasi produk Kérastase via
+              WhatsApp.
+            </p>
+            <a
+              href="https://wa.me/628113250929"
+              class="btn btn-primary btn-large"
+              >Book Now via WhatsApp</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <span class="logo-main">House Of David</span>
+              <span class="logo-sub">Salon · Est. 1980</span>
+            </a>
+            <p>Authorized Kérastase Salon di Surabaya.</p>
+          </div>
+
+          <!-- Locations -->
+          <div class="footer-col">
+            <h4>Our Locations</h4>
+            <ul>
+              <li>
+                <strong>Hod Waterplace</strong><br />
+                D1/D2, Surabaya
+              </li>
+              <li>
+                <strong>Hod Galaxy Mall</strong><br />
+                3rd Floor, Surabaya
+              </li>
+              <li>
+                <strong>Hod Pakuwon City Mall</strong><br />
+                3rd Floor, Unit 2, Surabaya
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <ul>
+              <li>WhatsApp: 0811-325-0929</li>
+              <li>
+                Instagram:
+                <a
+                  href="https://www.instagram.com/houseofdavidsalon/"
+                  target="_blank"
+                  rel="noopener"
+                  >@houseofdavidsalon</a
+                >
+              </li>
+              <li>
+                TikTok:
+                <a
+                  href="https://www.tiktok.com/@houseofdavid.salon"
+                  target="_blank"
+                  rel="noopener"
+                  >@houseofdavid.salon</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 House Of David Salon Surabaya. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========== CART DRAWER ========== -->
+    <aside class="cart-drawer" id="cartDrawer">
+      <div class="cart-overlay" id="cartOverlay"></div>
+      <div class="cart-panel">
+        <div class="cart-head">
+          <h3>Shopping Bag</h3>
+          <button class="cart-close" id="cartClose">✕</button>
+        </div>
+        <div class="cart-body" id="cartBody">
+          <div class="cart-empty" id="cartEmpty">
+            <p>Your bag is empty</p>
+          </div>
+          <ul class="cart-list" id="cartList"></ul>
+        </div>
+        <div class="cart-foot" id="cartFoot" hidden>
+          <div class="cart-subtotal">
+            <span>Subtotal</span>
+            <strong id="cartSubtotal">Rp 0</strong>
+          </div>
+          <button class="btn btn-primary btn-block" id="checkoutBtn">
+            Checkout via WhatsApp
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ========== FLOATING WHATSAPP ========== -->
+    <a
+      class="wa-float"
+      href="https://wa.me/628113250929"
+      target="_blank"
+      rel="noopener"
+      aria-label="Chat WhatsApp"
+    >
+      <svg viewBox="0 0 24 24">
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+        />
+      </svg>
+    </a>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
